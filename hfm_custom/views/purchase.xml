@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        
+        <!-- VIEWS: "HFM Sale Form View"
+        
+            - Model·········: model
+            - Base Addons···: base    
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        
+        <!-- Tree view for "model" -->
+        <!-- <record id="view_model_tree" model="ir.ui.view">
+            <field name="name">view.model.tree</field>
+            <field name="model">model</field>
+            <field name="inherit_id" ref="base.view_model_tree" />
+            <field name="arch" type="xml">
+                
+            </field>
+        </record> -->
+        
+        <!-- Form view for "model" -->
+        <record id="hfm_sale_purchase_order_form" model="ir.ui.view">
+            <field name="name">hfm.purchase.view.model.form</field>
+            <field name="model">purchase.order</field>
+             <field name="inherit_id" ref="purchase.purchase_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+                    <field name="challan_no" />
+                    <field name="challan_date" />
+                </xpath>
+            </field>
+        </record>
+        
+        
+
+        
+
+    </data>
+</odoo>
