@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SSLCommerz Payment Acquirer</title>
+    <!--<link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">-->
+</head>
+
+<body>
+    <section class="oe_container"
+        style="max-width: 1040px; margin: 0 auto; padding: 15px 15px 0 15px;box-sizing: border-box;">
+        <h1 class="oe_slogan text-center"
+            style="max-width:600px;  font-size: 35px; line-height: 45px; color:#000000; font-weight:400; font-family:Lato, arial, sans-serif;margin:0 auto; padding: 0 0 25px 0;">
+            Integration of SSLCommerz Payment Acquirer with Odoo eCommerce</h1>
+        <p class="mb16 text-center" style="margin-bottom: 0;">SSLCOMMERZ is the first payment gateway in Bangladesh
+            opening doors for merchants to receive payments on the internet via their online stores. Customers are able
+            to buy products online using their credit cards as well as bank accounts. If you are a merchant, you have
+            come to the right place! Enhance your business by integrating SSLCOMMERZ to your online store and
+            facilitating online payment in Bangladeshi Taka. Your customers will be able to pay for your products using
+            local credit/debit cards like VISA, MasterCard, DBBL Nexus Card and any kind of credit card or bank accounts
+            right from your online store. SSLCOMMERZ uses industry standard Secure Sockets Layer (SSL) technology which
+            is used worldwide for securing data encryption.
+        </p>
+    </section>
+    <section class="oe_container"
+        style="max-width: 1040px; margin: 50px auto; padding: 0 15px; box-sizing: border-box;">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-8">
+                <div style="text-align: left; margin:0; padding:0 0 20px 0; font-size: 26px; line-height: 32px; ">
+                    <h2
+                        style="margin:0;  padding:0 0 20px 0; font-size: 26px; line-height: 32px; color: #212121; opacity: 1;  font-family:Lato, arial, sans-serif; font-weight: 400;">
+                        Key Features
+                    </h2>
+                    <p style="font-size:16px; line-height: 24px;">
+                        This app allows payment using credit cards using the Checkout page option from SSLCommerz
+                        Payment Acquirer.
+                        The payment can integrated to:
+                    </p>
+                    <div style="margin: 20px auto 0;">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12"><img src="images/icon-keys.jpeg" alt="keys"
+                                    style="width: 30px; height: 30px;">
+                                <span style="font-size: 16px; line-height: 24px; font-weight: 600; padding-left: 10px;">
+                                    Payment
+                                    within Odoo Website</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="oe_container"
+        style="max-width: 1040px; margin: 50px auto 20px auto; padding: 0 15px; box-sizing: border-box;">
+        <div class="row">
+            <div class="col-12 col-sm-7 col-md-7">
+                <div
+                    style="background-color: #fff; padding: 24px 24px 45px 24px; border-radius: 4px;border: 1px solid #ddd; margin-bottom: 10px;">
+                    <h4
+                        style="font-size: 26px; line-height: 42px; color: #212121; opacity: 1; font-family:Lato, arial, sans-serif; font-weight: 400;margin:0; padding: 0 0 15px 0;">
+                        How to install the SSLCommerz Payment Acquirer
+                    </h4>
+                    <h3 style="font-size: 20px; line-height: 28px; font-weight: 600;">Install on your server:</h3>
+                    <div
+                        style="font-size: 16px; line-height: 24px; font-weight: 400; font-family:Lato, arial, sans-serif;">
+                        <ol style="padding-bottom:0; margin-bottom: 0;">
+                            <li>Download the code on your server.
+                            </li>
+                            <li>Also add the module folder path to your Odoo Conf file.</li>
+                            <li>Restart your server.</li>
+                            <li>Go to Settings. Click on "Activate the developer mode".</li>
+                            <li>Go to Apps. Click on "Update Apps List" and then click "Update".</li>
+                            <li>Remove all the filters and search by "bose_ssl_commerz".</li>
+                            <li>Click on Install.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- <section class="oe_container"
+        style="max-width: 1040px; margin: 50px auto 20px auto; padding: 0 15px; box-sizing: border-box;">
+
+        <div class="row">
+            <div class="col-12 col-sm-5 col-md-12">
+                <div style="background-color: #fff; padding: 24px; border-radius: 4px; border: 1px solid #ddd;">
+                    <h4
+                        style="font-size: 22px; line-height: 30px; color: #212121; opacity: 1; font-family:Lato, arial, sans-serif; font-weight: 400;margin:0; padding: 8px 0 15px 0;">
+                        For registration in Production
+                    </h4>
+                    <div
+                        style="font-size: 16px; line-height: 24px; font-weight: 400;font-family:Lato, arial, sans-serif; padding-bottom: 30px;">
+                        <ul>
+                            <li>
+                                Go to Production Site:
+                                <a href="https://signup.sslcommerz.com/register"
+                                    target="_blank">https://signup.sslcommerz.com/register</a>
+
+                            </li>
+                            <li>
+                                Enter Informations in the required fields and click on "Register"
+                                <img src="images/signup.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                            </li>
+                            <li>
+                                Signup Success will be shown.
+                                <img src="images/signup_success.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                            </li>
+                            <li>
+                                Now login to your given mail address and find the email sent by SSL Commerz.
+                                <img src="images/email_inbox1.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Open the email and click on "CONFIRM HERE" inside your mail.
+                                <img src="images/email_inbox2.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Verification Success message will be shown.
+                                <img src="images/verify_success.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Login to Your Account using your email and password.
+                                <img src="images/ssl_login.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                After login, you will land on the <b>"Merchant Enrollment Form (MEF)"</b>
+                                In Company Profile Tab, update the required fields:
+                                <ul>
+                                    <li>Select  <b>"Web API"</b> for Package Name</li>
+                                    
+                                    <img src="images/company_profile.png" alt="preview"
+                                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                                        <li>Update  <b>"Address Informations"</b>  and click on <b>"Save & Next"</b>.</li>
+                                        <img src="images/company_profile2.png" alt="preview"
+                                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                                </ul>
+
+                            </li>
+                            <li>
+                                Update  <b>"Primary Contact Information"</b>  if required:
+                                <img src="images/primary_contact.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Update <b>"Ownership Information"</b>  for required fields and finally click on  <b>"Save & Next"</b>.
+                                <img src="images/ownership.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Update <b>"Banking Information"</b>  for required fields and finally click on <b>"Save & Next"</b>.
+                                <img src="images/banking_info.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Update <b>"Settlement/Transaction"</b>   for required fields and finally click on <b>"Save & Next"</b>.
+                                <img src="images/settlement_info.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Update <b>"KYC Profile"</b>  for required fields and finally click on <b>"Save & Next"</b>.
+                                <img src="images/kyc_info.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Update <b>"Web/App Info"</b>   for required fields and finally click on <b>"Save & Next"</b>.
+                                <img src="images/web_info.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                Update <b>"Transaction Info"</b>   for required fields and finally click on <b>"Save & Next"</b>.
+                                <img src="images/transaction_info.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                                A Pop-up will be shown. Now you have to upload the following:
+                                <ol>
+                                    <li>Upload Website Logo</li>
+                                    <li>Valid photograph of authorized personnel lawfully representing the Merchant</li>
+                                    <li>Copy of Certificate of Incorporation</li>
+                                    <li>Articles of Association stating the owners name(s) in case of limited company</li>
+                                    <li>Copy of Trade License</li>
+                                    <li>Copy of TIN & VAT Certificates</li>
+                                    <li>Copy of National ID/Passport of the Authorized Personnel (Paste the Images in a DOC File)</li>
+                                    <li>Upload Signatory Signature Along With Seal(Use MEF Signature Section)</li>
+                                </ol>
+                                <img src="images/images_upload.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                            </li>
+                            <li>
+                               After uploading all requried documents, you will land into the Full Details Page.
+
+                               Under <b>"Merchange Information"</b>, you will see the Marchant Email and Merchant Application Status.
+
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <h4
+                        style="font-size:22px; line-height: 30px; color: #212121; opacity: 1; font-family:Lato, arial, sans-serif; font-weight: 400; margin:0; padding: 0 0 15px 0;">
+                        For registration in Sandbox, click the link
+                    </h4>
+                    <div
+                        style="font-size: 16px; line-height: 24px; font-weight: 400;font-family:Lato, arial, sans-serif; padding-bottom: 35px;">
+                        Go to Sandbox Url:
+                        <a href="https://developer.sslcommerz.com/registration/"
+                            target="_blank">https://developer.sslcommerz.com/registration/</a>.
+                        <br>For creating a Sandbox store, please look at the end of this page: <b>Steps to create a SSL
+                            Commerz
+                            Sandbox Account</b>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="oe_container"
+        style="max-width: 1040px; margin: 50px auto 20px auto; padding: 0 15px; box-sizing: border-box;">
+
+        <!-- <div class="row"> -->
+        <h4
+            style="font-size: 26px; line-height: 42px; color: #212121; opacity: 1; font-family:Lato, arial, sans-serif; font-weight: 400;margin:0; padding: 0 0 15px 0;">
+            This Odoo Module supports:
+        </h4>
+        <!-- <div class="col-12 col-sm-6 col-md-6">
+                <div
+                    style="background-color: #fff; padding: 24px 24px 45px 24px; border-radius: 4px;border: 1px solid #ddd; margin-bottom: 10px;">
+                    <div
+                        style="font-size: 16px; line-height: 24px; font-weight: 400; font-family:Lato, arial, sans-serif;">
+                        <h4 class="text-left">1. Easy Checkout Integration</h4>
+                        <p>It is a embedded js integration within your site which will display the payment channels in
+                            your page.</p>
+                        <img src="images/EasyChkOut.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    </div>
+                </div>
+            </div> -->
+        <div class="col-12 col-sm-6 col-md-6">
+            <div style="background-color: #fff; padding: 24px; border-radius: 4px; border: 1px solid #ddd;">
+                <div
+                    style="font-size: 16px; line-height: 24px; font-weight: 400;font-family:Lato, arial, sans-serif; padding-bottom: 30px;">
+                    <h4 class="text-left">SSL Commerz Hosted Payment Integration</h4>
+                    <p>Here, you will redirect the customer to SSLCOMMERZ Hosted page to display the payment
+                        channels</p>
+                    <!-- <img src="images/HostedRedirection.png" alt="preview"
+                                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;"> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+        </div>
+    </section>
+
+    <section class="oe_container"
+        style="max-width: 1040px; margin: 50px auto 30px auto; padding: 0 15px; box-sizing: border-box;">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h4 class="text-center"
+                    style="font-size: 30px; line-height: 42px; color: #212121; opacity: 1; font-family:Lato, arial, sans-serif; font-weight: 400;margin:0; padding: 0 0 25px 0;">
+                    Card Payment using SSL Commerz Redirect:
+                </h4>
+
+                <p style="font-size: 16px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                    Select SSL Commerz in Website and click on "Pay Now"
+                </p>
+                <img src="images/chk_select.png" alt="preview"
+                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+
+                <p style="font-size: 16px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                    Add card details and click on "PAY" button at the bottom.
+                </p>
+                <img src="images/easyCheckout.png" alt="preview"
+                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                <p style="font-size: 16px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                    A OTP will be sent to your mobile number. Insert the OTP and then click "Confirm"
+                </p>
+                <p style="font-size: 16px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                    Payment successful message along with Transaction details will be shown.
+                </p>
+
+                <img src="images/web_payment_details.png" alt="preview"
+                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+
+
+                <p style="font-size: 16px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                    Backend View of Transaction
+                </p>
+                <img src="images/tran_1.png" alt="preview"
+                    style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="oe_container"
+        style="max-width: 1040px; margin: 50px auto 30px auto; padding: 0 15px; box-sizing: border-box;">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h4 class="text-center"
+                    style="font-size: 30px; line-height: 42px; color: #212121; opacity: 1; font-family:Lato, arial, sans-serif; font-weight: 400;margin:0; padding: 0 0 25px 0;">
+                    Configuration for App:
+                </h4>
+                <p style="font-size: 24px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                    There are two configurations:
+                <ol style="font-size: 18px; line-height: 24px; font-family:Lato, arial, sans-serif;">
+                    <li>Configuration for SSLCOMMERZ Panel</li>
+                    <li>Configuration for Odoo</li>
+                </ol>
+                </p>
+                <h3 class="text-center"
+                    style="font-size: 24px; line-height: 42px; color: #212121; opacity: 1; font-family:Lato, arial, sans-serif; font-weight: 400;margin:0; padding: 0 0 25px 0;">
+                    1. Configuration for SSLCOMMERZ Panel
+                </h3>
+                <p style="font-size: 24px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                    After creation of Store, you will get a mail. Follow the steps below:
+                </p>
+                <p>
+                </p>
+                <p style="font-size: 24px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                </p>
+                <ol>
+                    <li>
+                        Go to mail .Note down your store id and store password. These will required later in Odoo
+                        Configuration.
+                    </li>
+                    <li>
+                        Click on "Merchant Panel URL".
+                    </li>
+                    <li>
+                        Give Login ID, Password and Capture. Login ID and Password are given in the mail forwarded to
+                        you by SSL Commerz.
+                    </li>
+                    <li>
+                        Your profile will be created.
+                    </li>
+                    <li>
+                        Click on "My Stores". Your new created store will be shown.
+                    </li>
+                    <li>
+                        Click on "IPN Settings" in Store Table under Action Tab.
+                    </li>
+                    <p></p>
+                    <img src="images/my_stores.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <p></p>
+                    <li>
+                        Click on "IPN Settings" in Store Table under Action Tab.
+                    </li>
+                    <p></p>
+                    <img src="images/edit_ipn_settings.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Activate "Enable HTTP Listener".
+                        Add Your URL: "https://YOUR_SERVER_URL/payment/sslcommerz/ipn/"
+                        Click Save.
+                    </li>
+                    <img src="images/edit_ipn_settings_2.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                </ol>
+                </p>
+
+
+                <p style="font-size: 24px; line-height: 24px; font-weight: 700;font-family:Lato, arial, sans-serif;">
+                    2. Configuration for Odoo
+                </p>
+                <ol>
+
+                    <li>
+                        Go to Invoicing --> Configuration --> Payment Acuirers
+                    </li>
+                    <img src="images/payment_acuirers.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        Click on "SSL Commerz Redirect"
+                    </li>
+                    <img src="images/ssl_commerz_redirect.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <p>
+
+                        <li>
+                            <ul>
+                                <li>
+                                    Change State "Enabled" for use in Production or "Test Mode" for use in Sandbox
+                                </li>
+                                <li>
+                                    Select your Website
+                                </li>
+                                <li>
+                                    Add your Store ID
+                                </li>
+                                <li>
+                                    Add your Store Password
+                                </li>
+                            </ul>
+                        </li>
+                    </p>
+
+
+                    <img src="images/odoo_credentials_1.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Go to "Configuration" Tab
+
+                        <ul>
+                            <li>
+                                Select Payment Method for example "Bank"
+                            </li>
+                            <li>
+                                Add allowed countries if necessary for you
+                            </li>
+                        </ul>
+                    </li>
+                    <img src="images/odoo_credentails_2.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Save the Record.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="oe_container"
+        style="max-width: 1040px; margin: 50px auto 30px auto; padding: 0 15px; box-sizing: border-box;">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h4 class="text-center"
+                    style="font-size: 30px; line-height: 42px; color: #212121; opacity: 1; font-family:Lato, arial, sans-serif; font-weight: 400;margin:0; padding: 0 0 25px 0;">
+                    Steps to create a SSL Commerz Sandbox Account.
+                </h4>
+
+                <ul>
+                    <li>
+                        For registration in Sandbox, click the link <a
+                            href="https://developer.sslcommerz.com/registration/">https://developer.sslcommerz.com/registration/</a>.
+                    </li>
+
+                    <li>
+                        Click on "Create Sandbox Account"
+                    </li>
+                    <img src="images/create_sandbox_account.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        A Pop-up will be shown.
+                        Enter your domain in the field and click on "Next".
+                    </li>
+                    <img src="images/domain_add.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Enter your Company Name in the field and click on "Next".
+                    </li>
+                    <img src="images/company_name.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Enter your Company Address in the field and click on "Next".
+                    </li>
+                    <img src="images/company_address.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Enter your Name in the field and click on "Next".
+                    </li>
+                    <img src="images/your_name.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Enter your company address in the field and click on "Next".
+                    </li>
+                    <img src="images/company_address.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Enter your email address in the field and click on "Next".
+                    </li>
+                    <img src="images/your_email.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        Enter your phone number in the field and click on "Next".
+                    </li>
+                    <img src="images/your_phone.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Enter your username in the field and click on "Next".
+                    </li>
+                    <img src="images/your_username.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        Enter your password in the field and click on "Next".
+                    </li>
+                    <img src="images/your_password.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        Confirm your password in the field and click on "Sign Up".
+                    </li>
+                    <img src="images/confirm_password.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        Confirm registration Button.
+                    </li>
+                    <img src="images/confirm_reg.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+
+                    <li>
+                        Store Creation Confirmation will be shown. Press on "OK".
+                    </li>
+                    <img src="images/store_success.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        Now login to your mail and check the mail from SSL Commerz. Sandbox Verification Code will be
+                        sent. Copy the Verification Code.
+                    </li>
+                    <img src="images/sandbox_verify.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        In the page "https://developer.sslcommerz.com/registration/", click on Verify Registration.
+                    </li>
+                    <img src="images/sandbox_verify.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                    <li>
+                        Now check your mail again. Your all store credentials will be given. You can now login using the
+                        store credentials.
+                        Click on the Merchant Panel URL for login to your store.
+                    </li>
+                    <img src="images/store_cred.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        Click on the Merchant Panel URL for login to your store.
+                    </li>
+                    <img src="images/merchant_panel_1.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+
+                    <li>
+                        Enter your login id and password. ALso put the Capture number. Click on "Login"
+                    </li>
+                    <img src="images/login_interface.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+
+                    <li>
+                        Your will land into your merchant Dashboard.
+                    </li>
+                    <img src="images/dashbaord_merchant.png" alt="preview"
+                        style="max-width: 100%; display: block; margin:auto auto 40px auto; text-align: center; padding: 4px; border: 2px solid #ddd; border-radius: 4px;">
+                </ul>
+
+
+
+            </div>
+        </div>
+    </section> -->
+
+
+
+</body>
+
+</html>

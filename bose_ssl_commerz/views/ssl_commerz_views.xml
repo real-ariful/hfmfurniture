@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="acquirer_form_sslcommerz" model="ir.ui.view">
+            <field name="name">acquirer.form.sslcommerz</field>
+            <field name="model">payment.acquirer</field>
+            <field name="inherit_id" ref="payment.acquirer_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//group[@name="acquirer"]' position='after'>
+                    <group attrs="{'invisible': [('provider', '!=', 'sslcommerz')]}">
+                                <field name="sslcommerz_store_id"/>
+                                <field name="sslcommerz_store_passwd"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="transaction_form_sslcommerz" model="ir.ui.view">
+            <field name="name">acquirer.transaction.form.sslcommerz</field>
+            <field name="model">payment.transaction</field>
+            <field name="inherit_id" ref="payment.transaction_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//sheet' position='inside'>
+                    <notebook>
+                        <page string="SSL Commerz TX Details" 
+                        attrs="{ 'invisible' : [('provider','!=','sslcommerz')] }"
+                        >
+                            <group>
+                                <group>
+                                    <field name="sslcommerz_txn_type"/>
+                                    <field name="sslcommerz_card_no"/>
+                                    <field name="sslcommerz_card_brand"/>
+                                    <field name="sslcommerz_amt"/>
+                                    <field name="sslcommerz_store_amt"/>
+                                    <field name="sslcommerz_currency"/>
+                                </group>
+                                <group>
+                                <field name="sslcommerz_tran_id"/>
+                                    <field name="sslcommerz_val_id"/>
+                                    <field name="sslcommerz_bank_tran_id"/>
+                                    <field name="sslcommerz_status"/>
+                                    <field name="sslcommerz_ref"/>
+                                    <field name="sslcommerz_risk_level"/>
+                                    <field name="sslcommerz_risk_title"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+{
+    'name': "SSLCommerz Payment Acquirer",
+    'summary': """SSLCommerz Payment Acquirer""",
+    'description': """This module integrates SSL Commerz payment gateway with Odoo""",
+    'author': "Bose Tech",
+    'website': "http://www.bose-tech.com",
+    'category': 'Accounting/Payment',
+    'version': '14.0.1.2.0',
+    'depends' : ['payment','website_sale'],
+    'external_dependencies': {'python': ['sslcommerz-python']},
+    'data': [
+        # 'security/ir.model.access.csv',
+        'views/ssl_commerz_views.xml',
+        'views/ssl_commerz_payment_template.xml',
+        'data/payment_acquirer_data.xml',
+        'views/response_status.xml',
+    ],
+    'installable': True,
+    "images": ['static/description/banner.png', 'static/description/icon.png'],
+    'post_init_hook': 'create_missing_journal_for_acquirers',
+    'uninstall_hook': 'uninstall_hook',
+    'currency': 'USD',
+    'price': '100.00',
+}
